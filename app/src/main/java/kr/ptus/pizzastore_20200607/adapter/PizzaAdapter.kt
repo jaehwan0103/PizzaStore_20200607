@@ -34,6 +34,7 @@ class PizzaAdapter(context: Context, resId: Int, list: List<PizzaStore>) : Array
         val pizzaLogo = row.findViewById<ImageView>(R.id.pizzaLogo)
         val storeName = row.findViewById<TextView>(R.id.pizzaNameTxt)
 
+
         val data = mList[position]
 
         storeName.text = data.name

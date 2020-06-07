@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import java.io.Serializable
 
-class PizzaStore (val name : String, val logoUrl : String, phoneNum : String) :Serializable {
+class PizzaStore (val name : String, val logoUrl : String, val phoneNum : String) :Serializable {
 
 
 
