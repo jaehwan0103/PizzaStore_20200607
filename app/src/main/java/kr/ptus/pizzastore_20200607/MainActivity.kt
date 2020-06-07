@@ -2,11 +2,15 @@ package kr.ptus.pizzastore_20200607
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.pizza_list_item.*
+import kr.ptus.pizzastore_20200607.adapter.PizzaAdapter
 import kr.ptus.pizzastore_20200607.data.PizzaStore
 
 class MainActivity : BaseActivity() {
 
     val pizzaStoreList = ArrayList<PizzaStore>()
+    lateinit var mPizzaAdapter : PizzaAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +27,9 @@ class MainActivity : BaseActivity() {
 
     override fun setValuse() {
         addStores()
+        mPizzaAdapter = PizzaAdapter(mContext, R.layout.pizza_list_item, pizzaStoreList)
+
+        listViewTxt.adapter = mPizzaAdapter
 
     }
     fun  addStores(){
