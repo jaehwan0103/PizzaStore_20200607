@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
+import android.widget.TextView
 import kr.ptus.pizzastore_20200607.R
 import kr.ptus.pizzastore_20200607.data.PizzaStore
 import java.util.ArrayList
@@ -28,6 +30,12 @@ class PizzaAdapter(context: Context, resId: Int, list: List<PizzaStore>) : Array
 
         val row = tempRow!!
 
+        val pizzaLogo = row.findViewById<ImageView>(R.id.pizzaLogo)
+        val storeName = row.findViewById<TextView>(R.id.pizzaNameTxt)
+
+        val data = mList[position]
+
+        storeName.text = data.name
 
 
         return row
