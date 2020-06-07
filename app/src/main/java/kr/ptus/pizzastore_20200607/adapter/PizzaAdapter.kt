@@ -10,8 +10,7 @@ import kr.ptus.pizzastore_20200607.data.PizzaStore
 import java.util.ArrayList
 import java.util.zip.Inflater
 
-class PizzaAdapter(context: Context, resId: Int, list: List<PizzaStore>) :
-    ArrayAdapter<PizzaStore>(context, resId, list) {
+class PizzaAdapter(context: Context, resId: Int, list: List<PizzaStore>) : ArrayAdapter<PizzaStore>(context, resId, list) {
 
     val mContext = context
     val mList = list
