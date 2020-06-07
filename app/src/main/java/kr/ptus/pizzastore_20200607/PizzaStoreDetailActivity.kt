@@ -21,6 +21,14 @@ class PizzaStoreDetailActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        callBtn.setOnClickListener {
+
+            val  pl = object : permissionListener
+
+
+
+
+        }
 
     }
 
