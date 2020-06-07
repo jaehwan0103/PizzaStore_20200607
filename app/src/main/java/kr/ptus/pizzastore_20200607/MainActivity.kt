@@ -1,5 +1,6 @@
 package kr.ptus.pizzastore_20200607
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,6 +23,14 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
+
+        listViewTxt.setOnItemClickListener{parent, view, position, id ->
+
+            val clickedStore = pizzaStoreList[position]
+
+            
+
+        }
 
     }
 
