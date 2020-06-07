@@ -28,7 +28,9 @@ class MainActivity : BaseActivity() {
 
             val clickedStore = pizzaStoreList[position]
 
-            
+            val myIntent = Intent(mContext, PizzaStoreDetailActivity::class.java)
+            myIntent.putExtra("store",clickedStore)
+            startActivity(myIntent)
 
         }
 
